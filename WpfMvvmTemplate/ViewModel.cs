@@ -49,7 +49,7 @@ namespace WpfMvvmTemplate
         {
             Student = new Student();
             Students = new ObservableCollection<Student>();
-            Students.CollectionChanged += new System.Collections.Specialized.NotifyCollectionChangedEventHandler(Students_CollectionChanged);
+            Students.CollectionChanged += Students_CollectionChanged;
         }
         //Whenever new item is added to the collection, am explicitly calling notify property changed
         void Students_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
